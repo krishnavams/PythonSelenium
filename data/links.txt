@@ -1,0 +1,9 @@
+http://demowebshop.tricentis.com/login
+
+https://services.smartbear.com/samples/TestComplete14/smartstore/
+
+https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/chromedriver_status.md
+
+https://developer.apple.com/documentation/webkit/macos_webdriver_commands_for_safari_11_1_and_earlier
+
+https://chromedriver.chromium.org/downloads

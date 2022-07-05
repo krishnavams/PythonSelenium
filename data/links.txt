@@ -7,3 +7,16 @@ https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/chromedriv
 https://developer.apple.com/documentation/webkit/macos_webdriver_commands_for_safari_11_1_and_earlier
 
 https://chromedriver.chromium.org/downloads
+
+
+
+
+XPATH:
+------
+//a[contains(text(),'inbox')]
+
+
+CSS_SELECTOR:
+------------
+syntax:
+       html-tag[Attribute_name=value]

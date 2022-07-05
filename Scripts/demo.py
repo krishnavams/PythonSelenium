@@ -24,23 +24,28 @@ email = lo.id_("Email")
 email.send_keys("abcd@gmail.com")
 lo.id_("Password").send_keys(password)
 lo.id_("ConfirmPassword").send_keys(password)
-lo.id_("register-button").click()
+lo.id_("ConfirmPassword").submit()
+print(driver.find_element(By.XPATH, "//a[@class='ico-register']").value_of_css_property("color"))
+# lo.id_("register-button").click()
 # driver.find_element(By.ID, "Password").send_keys(password)
 # driver.find_element(By.ID, "ConfirmPassword").send_keys(password)
 # driver.find_element(By.ID, "register-button").click()
 sleep(2)
-# for _ in range(6):
-#     try:
-#         if driver.find_element(By.LINK_TEXT,"The specified email already exists").is_displayed():
-#             email.clear()
-#             from random import random
-#
-#             email.send_keys(f"abcd{int(random() * 100)}@gmail.com")
-#     except:
-#         break
-#
-# if driver.find_element(By.XPATH, "//input[@value='Continue']").is_displayed():
-#     print("Registration done")
-# else:
-#     print("Registration not done")
+for _ in range(6):
+    try:
+        print("try block")
+        if len(driver.find_elements(By.LINK_TEXT, "The specified email already exists")) > 1:
+            if driver.find_element(By.LINK_TEXT, "The specified email already exists").is_displayed():
+                email.clear()
+                from random import random
+
+                email.send_keys(f"abcd{int(random() * 100)}@gmail.com")
+    except:
+        break
+
+if len(driver.find_elements(By.XPATH, "//input[@value='Continue']")) > 1:
+    if driver.find_element(By.XPATH, "//input[@value='Continue']").is_displayed():
+        print("Registration done")
+else:
+    print("Registration not done")
 driver.close()

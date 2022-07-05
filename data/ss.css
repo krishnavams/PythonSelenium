@@ -1,0 +1,12 @@
+.class{
+    background-color: black;
+}
+.input{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}

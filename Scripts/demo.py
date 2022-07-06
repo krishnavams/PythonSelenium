@@ -16,25 +16,15 @@ lo.id_("gender-male").click()
 lo.id_("FirstName").send_keys("ram")
 lo.id_("LastName").send_keys("ram")
 email = lo.id_("Email")
-# driver.find_element(By.LINK_TEXT, "Register").click()
-# driver.find_element(By.ID, "gender-male").click()
-# driver.find_element(By.ID, "FirstName").send_keys("ram")
-# driver.find_element(By.ID, "LastName").send_keys("ram")
-# email = driver.find_element(By.ID, "Email")
 email.send_keys("abcd@gmail.com")
 lo.id_("Password").send_keys(password)
 lo.id_("ConfirmPassword").send_keys(password)
 lo.id_("ConfirmPassword").submit()
 print(driver.find_element(By.XPATH, "//a[@class='ico-register']").value_of_css_property("color"))
-# lo.id_("register-button").click()
-# driver.find_element(By.ID, "Password").send_keys(password)
-# driver.find_element(By.ID, "ConfirmPassword").send_keys(password)
-# driver.find_element(By.ID, "register-button").click()
 sleep(2)
 for _ in range(6):
     try:
-        print("try block")
-        if len(driver.find_elements(By.LINK_TEXT, "The specified email already exists")) > 1:
+        if len(driver.find_elements(By.LINK_TEXT, "The specified email already exists")) >= 1:
             if driver.find_element(By.LINK_TEXT, "The specified email already exists").is_displayed():
                 email.clear()
                 from random import random
@@ -43,9 +33,18 @@ for _ in range(6):
     except:
         break
 
-if len(driver.find_elements(By.XPATH, "//input[@value='Continue']")) > 1:
+if len(driver.find_elements(By.XPATH, "//input[@value='Continue']")) >= 1:
     if driver.find_element(By.XPATH, "//input[@value='Continue']").is_displayed():
         print("Registration done")
 else:
     print("Registration not done")
 driver.close()
+# driver.find_element(By.LINK_TEXT, "Register").click()
+# driver.find_element(By.ID, "gender-male").click()
+# driver.find_element(By.ID, "FirstName").send_keys("ram")
+# driver.find_element(By.ID, "LastName").send_keys("ram")
+# email = driver.find_element(By.ID, "Email")
+# lo.id_("register-button").click()
+# driver.find_element(By.ID, "Password").send_keys(password)
+# driver.find_element(By.ID, "ConfirmPassword").send_keys(password)
+# driver.find_element(By.ID, "register-button").click()

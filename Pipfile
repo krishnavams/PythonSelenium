@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 selenium = "==3.141.*"
 requests = "*"
+webdriver-manager = "*"
+beautifulsoup4 = "*"
 
 [dev-packages]
 autopep8 = "*"

@@ -1,0 +1,95 @@
+FUNCTIONALITY TESTING SCENARIOS
+
+Reach module:
+
+1)Record name text field
+2)Email text field
+3)Department text field
+4)Phone text field
+5)Fax text field
+
+1)Record name text field: (SRS Requirement)
+  1.1 It should only accept characters
+  1.2 It should not accept space between characters
+  1.3 It should accept 3-26 characters.
+  1.4 It should either be typed or added from Record name lookup page.
+
+                                                  Record name text field:
+                                                         Valid Scenario(+ve):                           Invalid scenarios(-ve):
+                                                          Roshan                                                     1. ab(<3)
+                                                                                                                            2. abcdegfrh....(>26)
+                                                                                                                            3. 1234
+                                                                                                                            4. 123abc
+                                                                                                                            5. 123@#
+                                                                                                                            6. asde#$%
+                                                                                                                            7. @%^&
+                                                                                                                            8. a b c d e f g
+                                                                                                                            9. 收藏
+
+2)Email text field: (SRS requirement)
+  2.1 It should accept Alphanumeric characters.
+  2.2 It should not accept space between characters.
+  2.3 It should accept only two special characters that is "@" and "." and that too only in domain name.
+  2.4 It should accept 5-101 characters.
+  2.5 It should be ended with a valid domain name.
+
+                                               Email text field:
+                                                         Valid Scenario(+ve):                            Invalid scenarios(-ve):
+                                                           smith124@gmail.com                           1. s m i t h@gmail.com
+                                                                                                                             2. a.co(<5)
+                                                                                                                             3. acgshysmm......@yahoo.com(>101)
+                                                                                                                             4. @$$#@gmail.com
+                                                                                                                             5. olive12#@gmail.com
+                                                                                                                             6. ricky@yahoo.com#
+                                                                                                                             7. коллекция@gmail.com
+                                                                                                                             8. Dexter
+
+3)Department text field: (SRS requirement)
+  3.1 It should accept only characters
+  3.2 It should not accept space between characters.
+  3.3 It should accept a maximum of 31 characters.
+
+                                             Department text field:
+                                                         Valid Scenario(+ve):                          Invalid scenarios(-ve):
+                                                                Marketing                                          1. asdcgsho..............(>31)
+                                                                                                                             2. s a l e s 
+                                                                                                                             3. !@$%
+                                                                                                                             4. 123dgmfm
+                                                                                                                             5. 1234780
+                                                                                                                             6. 123@#$
+                                                                                                                             7. sales^&*#@
+                                                                                                                             8. цуглуулга
+
+4)Phone Number field: (SRS requirement)
+ 4.1 It should accept only numbers
+ 4.2 It should accept only two special characters that is "+" and "-" to represent the country code and seperator respectively.
+ 4.3 It should accept a minimum of 4 and maximum of 12 numbers excluding country code.
+ 4.4 Providing country code should not be mandatory.
+
+                                              Phone Number field:                                             
+                                                        Valid Scenario(+ve):                         Invalid scenarios(-ve):             
+                                                              1)  8765422312                                    1. 987(<4)
+                                                              2) +91-7854220014                            2. 7542472.....(>12)
+                                                                                                                             3. abhsjdk
+                                                                                                                             4. 123dmck
+                                                                                                                             5. @#$*&%
+                                                                                                                             6. 123$%^
+                                                                                                                             7. bhsh!@*%#
+                                                                                                                             8. -87+7854220014
+                                                                                                                             9. Επικοινωνία
+
+5)Fax Number field: (SRS requirement)
+ 5.1 It should accept only numbers.
+ 5.2 It should accept only 4 special charaters that is "" and () and + and -
+ 5.3 It should accept a maximum of 31 numbers whose count incule special characters also.
+
+                                           Fax Number field:
+                                                    Valid Scenario(+ve):                         Invalid scenarios(-ve):      
+                                                         1)  2222 8888                                             1) 2222 8312 4578....(>31)
+                                                         2)  453-368-568                                         2) @#$2346
+                                                         3) +44 1-2222 8888                                  3) asdfddn
+                                                         4)  "+44 (161) 999 8888"                          4) 123cdgg
+                                                                                                                              5) &#%&@
+                                                                                                                              6) Επικοινωνία
+                                                                                                                           
+

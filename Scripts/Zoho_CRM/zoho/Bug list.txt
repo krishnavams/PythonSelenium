@@ -1,0 +1,12 @@
+BUG LIST
+-----------
+
+1) Major low priority bug: In create campaign page there is a component called 'Num sent'. This component name is not clear, if any new user see this component, he will be in confusion that is it no. of email sent or no. of product sent or no. of people sent. Because of this confusion it kills his bussiness time, so it is a major bug. But the priority is low because here component name is not clear but the component functionality is working fine. and moreover it is not a mandatory field and this bug is not having impact to any other functionalty.
+
+2)Critical low priority Bug: In purchase order page component 'PO NUMBER'. This component number should be generated automatically at the time of creation of purchase order, but it is not generating automatically, so we wont be able to track the bussiness properly, but the PO number can be inserted manually. so it is a critical bug with low priority.
+
+3)Major high priority bug: In create invoice page after creating the invoice for the respective order when we click on save button we should get invoice details page but instead of that we get error page, in the error page there is a 'go to home' button, which takes back to home page. In the home page the invoice number is generated. so it is a major bug with high priority.
+
+4)Major low priority bug: In create contact module, there is a feature called ''Asst phone". in this feature the term Asst is not clear to the user, so it is a major bug with low priority.
+
+5) Critical medium priority bug: In Account module there is a feature called 'TICKER SYMBOL'. this field is used to provide company logo for which the customer is working, providing comapny logo makes easier for us to track the customer as it provides a unique detail for the customer. this symbol should be added to the field, but in the feature no adding symbol button is available which makes it a crirtical bug but with medium priority as we can also track the customers by their names and contact details.

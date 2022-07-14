@@ -22,19 +22,19 @@ const dbl = function () {
 window.onload = function () {
     var output = document.getElementsByClassName('price');
     setInterval(function () {
-        output[0].innerHTML = Number((Math.random()).toFixed(5));
+        output[0].innerHTML = Number(Math.floor(Math.random()*1000).toFixed(5));
     }, 1000);
 
 
     setInterval(function () {
-        output[1].innerHTML = Number((Math.random()).toFixed(5));
+        output[1].innerHTML = Number(Math.floor(Math.random()*1000).toFixed(5));
     }, 2000);
 
     setInterval(function () {
-        output[2].innerHTML = Number((Math.random()).toFixed(5));
+        output[2].innerHTML = Number(Math.floor(Math.random()*1000).toFixed(5));
     }, 1000);
 
     setInterval(function () {
-        output[3].innerHTML = Number((Math.random()).toFixed(5));
+        output[3].innerHTML = Number(Math.floor(Math.random()*1000).toFixed(5));
     }, 3000);
 };

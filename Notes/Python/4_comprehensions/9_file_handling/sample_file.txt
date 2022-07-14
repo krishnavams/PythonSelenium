@@ -1,0 +1,10 @@
+1. Strings
+2. Lists
+3. Tuples
+4. Dictionaries
+5. Comprehensions (List and Dictionary)
+6. Functions
+7. Decorators
+8. Custom Sorting
+9. Booleans
+10. Unpacking

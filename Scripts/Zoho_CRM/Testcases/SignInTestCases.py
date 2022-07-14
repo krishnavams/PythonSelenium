@@ -72,13 +72,14 @@ def test_case_no_3():
 
 try:
     test_case_no_1()
+
 except:
     print("test case 1 failed")
 try:
     test_case_no_2()
 except:
-    print("test case 2 failed")
+    print("test case 2 passed")
 try:
     test_case_no_3()
 except:
-    print("test case 3 failed")
+    print("test case 3 passed")
